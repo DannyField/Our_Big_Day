@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import Nav from "./components/Nav";
+import Tasks from "./components/Tasks";
 
 const onFormSubmit = async (event) => {
   event.preventDefault();
@@ -19,7 +21,7 @@ const onFormSubmit = async (event) => {
     },
   };
   try {
-    const response = await fetch("http://192.168.1.20:8080/create", {
+    const response = await fetch("http://192.168.1.20:3000/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,6 +37,7 @@ const onFormSubmit = async (event) => {
 function App() {
   return (
     <>
+      <Nav />
       <form onSubmit={onFormSubmit}>
         <h1>TASKS</h1>
         <div>
@@ -86,6 +89,7 @@ function App() {
           <input type="submit" value="Submit Task" />
         </div>
       </form>
+      <Tasks />
     </>
   );
 }

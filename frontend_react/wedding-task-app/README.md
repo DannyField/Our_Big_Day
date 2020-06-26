@@ -1,6 +1,4 @@
-Our Big Day
-
-BACK END : Ruby on Rails, Postgresql database
+# Our Big Day
 
 # Front End
 
