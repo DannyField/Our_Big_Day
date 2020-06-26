@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  task_date: MyString
+  due_date: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_mobile: MyString
+  image: MyText
+  extra_info: MyText
+  completed: false
+
+two:
+  title: MyString
+  body: MyText
+  task_date: MyString
+  due_date: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_mobile: MyString
+  image: MyText
+  extra_info: MyText
+  completed: false
