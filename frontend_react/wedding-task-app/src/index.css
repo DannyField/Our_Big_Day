@@ -1,4 +1,3 @@
-/* index.css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -60,4 +59,14 @@ span {
 
 .task {
   padding: 10px;
+}
+
+.header {
+  background-image: url("./images/topheader.jpg");
+  background-repeat: no-repeat;
+  width: 100;
+}
+
+* {
+  background-color: silver;
 }
