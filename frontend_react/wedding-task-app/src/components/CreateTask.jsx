@@ -38,14 +38,14 @@ class CreateTask extends React.Component {
           ></textarea>
           <label htmlFor="task_date">Start Date</label>
           <input
-            type="text"
+            type="date"
             name="task_date"
             id="task_date"
             onChange={this.onInputChange}
           />
           <label htmlFor="due_date">Due Date</label>
           <input
-            type="text"
+            type="date"
             name="due_date"
             id="due_date"
             onChange={this.onInputChange}
@@ -59,11 +59,11 @@ class CreateTask extends React.Component {
             onChange={this.onInputChange}
           />
           <label htmlFor="body">Contact Email</label>
-          <textarea
+          <input
             name="contact_email"
             id="contact_email"
             onChange={this.onInputChange}
-          ></textarea>
+          ></input>
           <label htmlFor="start_date">Contact Mobile</label>
           <input
             type="text"
@@ -73,18 +73,18 @@ class CreateTask extends React.Component {
           />
           <label htmlFor="image">Image</label>
           <input
-            type="text"
+            type="file"
             name="image"
             id="image"
             onChange={this.onInputChange}
           />
           <label htmlFor="extra_info">Extra Information</label>
-          <input
+          <textarea
             type="text"
             name="extra_info"
             id="extra_info"
             onChange={this.onInputChange}
-          ></input>
+          ></textarea>
           <input type="submit" value="Submit" />
         </form>
       </div>

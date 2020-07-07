@@ -115,67 +115,65 @@ class EditTask extends React.Component {
               value={title}
             />
             <label htmlFor="body">Description</label>
-            <input
+            <textarea
               type="text"
               name="body"
               id="body"
               onChange={this.onInputChange}
               value={body}
-            />
-            <label htmlFor="title">Start Date</label>
+            ></textarea>
+            <label htmlFor="task_date">Start Date</label>
             <input
-              type="text"
+              type="date"
               name="task_date"
               id="task_date"
               onChange={this.onInputChange}
               value={task_date}
             />
-            <label htmlFor="title">Due Date</label>
+            <label htmlFor="due_date">Due Date</label>
             <input
-              type="text"
+              type="date"
               name="due_date"
               id="due_date"
               onChange={this.onInputChange}
               value={due_date}
             />
-            <div>CONTACT INFO</div>
             <label htmlFor="contact_mobile">Contact Name</label>
-            <textarea
+            <input
               name="contact_name"
               id="contact_name"
               onChange={this.onInputChange}
               value={contact_name}
-            ></textarea>
+            ></input>
             <label htmlFor="contact_email">Contact Email</label>
-            <textarea
+            <input
               name="contact_email"
               id="contact_email"
               onChange={this.onInputChange}
               value={contact_email}
-            ></textarea>
+            ></input>
             <label htmlFor="contact_mobile">Contact Mobile</label>
-            <textarea
+            <input
               name="contact_mobile"
               id="contact_mobile"
               onChange={this.onInputChange}
               value={contact_mobile}
-            ></textarea>
-            <div>EXTRA</div>
+            ></input>
             <label htmlFor="image">image</label>
             <input
-              type="text"
+              type="file"
               name="image"
               id="image"
               onChange={this.onInputChange}
               value={image}
             />
             <label htmlFor="extra_info">Extra Info</label>
-            <input
+            <textarea
               name="extra_info"
               id="extra_info"
               onChange={this.onInputChange}
               value={extra_info}
-            />
+            ></textarea>
             <label htmlFor="extra_info">Completed</label>
             <input
               name="completed"
