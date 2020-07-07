@@ -1,3 +1,10 @@
 .nav {
   background-color: salmon;
+  /* background-color: slateblue; */
+}
+
+.nav a {
+  text-decoration-style: none;
+  /* color: black; */
+  font-size: 21px;
 }

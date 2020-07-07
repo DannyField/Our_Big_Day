@@ -2,7 +2,7 @@ import React from "react";
 
 class NoMatch extends React.Component {
   render() {
-    return <h1>Our Wedding Task</h1>;
+    return <h1>This page does not exist</h1>;
   }
 }
 

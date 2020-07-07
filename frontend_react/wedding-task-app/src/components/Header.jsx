@@ -1,9 +1,14 @@
 import React from "react";
 import header from "../images/topheader.jpg";
+import "../stylesheets/Header.css";
 
 class Header extends React.Component {
   render() {
-    return <img src={header} alt="header" />;
+    return (
+      <div className="Header">
+        <img src={header} alt="header" />
+      </div>
+    );
   }
 }
 

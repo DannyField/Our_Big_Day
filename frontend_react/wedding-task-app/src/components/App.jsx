@@ -8,9 +8,9 @@ import CreateTask from "./CreateTask";
 import EditTask from "./EditTask";
 import Task from "./Task";
 import Header from "./Header";
-// import ProtectedRoute from "./ProtectedRoute";
-// import Login from "./Login";
-// import SignUp from "./Signup";
+import ProtectedRoute from "./ProtectedRoute";
+import Login from "./Login";
+import SignUp from "./SignUp";
 
 class App extends React.Component {
   render() {
@@ -19,11 +19,12 @@ class App extends React.Component {
         <Nav />
         <Header />
         <Switch>
-          <Route exact path="/tasks/:id/edit" component={EditTask} />
-          <Route exact path="/tasks" component={Tasks} />
-          <Route exact path="/tasks/create" component={CreateTask} />
-          {/* <Route exact path="/tasks/:id" component={Tasks} /> */}
-          <Route exact path="/tasks/:id" component={Task} />
+          <ProtectedRoute exact path="/tasks/:id/edit" component={EditTask} />
+          <ProtectedRoute exact path="/tasks/create" component={CreateTask} />
+          <ProtectedRoute exact path="/tasks" component={Tasks} />
+          <ProtectedRoute exact path="/tasks/:id" component={Task} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/sign-up" component={SignUp} />
           <Route component={NoMatch} />
         </Switch>
       </>

@@ -1,0 +1,20 @@
+.Header {
+  height: 500px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Header img {
+  object-fit: contain;
+  opacity: 0.6;
+  width: 100vw;
+  position: relative;
+  bottom: 300px;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Header {
+  background-color: pink;
+}

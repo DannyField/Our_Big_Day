@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../stylesheets/List.css";
 
 class Tasks extends React.Component {
   state = { tasks: [] };
@@ -13,11 +14,8 @@ class Tasks extends React.Component {
   renderTasks = () => {
     return this.state.tasks.map((task, index) => {
       return (
-        <div key={index}>
-          <h3>To do: {task.name}</h3>
-          <p>Info About The Task: {task.body}</p>
-          <p>Start Date: {task.start_date}</p>
-          <p>Due Date: {task.due_date}</p>
+        <div className="List" key={index}>
+          <h3>TO DO: {task.title}</h3>
           <Link
             to={{
               pathname: `/tasks/${task.id}`,
@@ -26,7 +24,6 @@ class Tasks extends React.Component {
           >
             <button>Show</button>
           </Link>
-          <hr />
         </div>
       );
     });
