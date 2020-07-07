@@ -15,7 +15,7 @@ class Tasks extends React.Component {
     return this.state.tasks.map((task, index) => {
       return (
         <div className="List" key={index}>
-          <h3>TO DO: {task.title}</h3>
+          <h3>{task.title}</h3>
           <Link
             to={{
               pathname: `/tasks/${task.id}`,
@@ -34,7 +34,12 @@ class Tasks extends React.Component {
   }
 
   render() {
-    return <div>{this.renderTasks()}</div>;
+    return (
+      <div>
+        <h1 className="TaskTitle">TASKS</h1>
+        {this.renderTasks()}
+      </div>
+    );
   }
 }
 
