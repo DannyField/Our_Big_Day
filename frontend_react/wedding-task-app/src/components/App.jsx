@@ -16,8 +16,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Nav />
         <Header />
+        <Nav />
         <Switch>
           <ProtectedRoute exact path="/tasks/:id/edit" component={EditTask} />
           <ProtectedRoute exact path="/tasks/create" component={CreateTask} />

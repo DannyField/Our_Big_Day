@@ -1,10 +1,25 @@
 .nav {
   background-color: salmon;
-  /* background-color: slateblue; */
 }
 
 .nav a {
   text-decoration-style: none;
-  /* color: black; */
   font-size: 21px;
+}
+
+.Button {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 120px;
+  height: 60px;
+  background-color: rosybrown;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.nav .item {
 }
