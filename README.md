@@ -1,5 +1,8 @@
 # Our_Big_Day
-Our wedding day is coming up fast - Next April in fact. So I wanted to create a small Rails and React app 
+
+![Sitemap](./images/landpage.png)
+
+Our wedding day is coming up fast - Next April in fact. So I wanted to create a small Rails and React app
 
 # Front End
 
@@ -25,4 +28,10 @@ Currently it's a very simple interface with a single form entry that stores to t
 
 # Screenshots
 
-# Project Management
+![Sitemap](./images/signUp.png)
+![Sitemap](./images/task.png)
+![Sitemap](./images/tasks.png)
+
+# To do
+
+A project is never really finished is it? Ideally, add a couple more sections such as contacts page and a more robust system overall. Currently anyone can sign up and see our tasks, so need to add references to that.
